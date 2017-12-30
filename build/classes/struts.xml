@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD  
+Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">  
+
+<struts>
+
+<package name="default" namespace="/" extends="struts-default">
+	<action name="playerRegister" class="khushahal.action.PlayerRegisterAction">
+		<result name="success">player-register-success.jsp</result>
+		<result name="error">player-register-error.jsp</result>
+	</action>
+	<action name="playerLogin" class="khushahal.action.PlayerLoginAction">
+		<result name="success">player-login-success.jsp</result>
+		<result name="error">player-login-error.jsp</result>
+	</action>
+	<action name="officerRegister" class="khushahal.action.OfficerRegisterAction">
+		<result name="success">officer-register-success.jsp</result>
+		<result name="error">officer-register-error.jsp</result>
+	</action>
+	<action name="officerLogin" class="khushahal.action.OfficerLoginAction">
+		<result name="success">officer-login-success.jsp</result>
+		<result name="error">officer-login-error.jsp</result>
+	</action>
+	<action name="viewplayers" class="khushahal.action.ShowAllPlayerAction">
+		<result name="success">show-all-player.jsp</result>
+	</action>
+	<action name="updateOfficerInfo" class="khushahal.action.UpdateOfficerInfoAction">
+		<result name="success">update-officer-info-success.jsp</result>
+	</action>
+	<action name="updatePlayerInfo" class="khushahal.action.UpdatePlayerInfoAction">
+		<result name="success">update-player-info-success.jsp</result>
+	</action>
+</package>
+
+</struts>
+
